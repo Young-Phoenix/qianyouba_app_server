@@ -2,33 +2,58 @@ package com.qianyouba.entity;
 
 public class User {
 	private int id;
-	private String username;
-	private String avatarUrl = "";
-	private int created;
-	private String name = "";
-	private String nickName = "";
-	private int onlineStatus;
-	private int roleStatus;
-	private String token = "";
-	private int updated;
 	
-	public User(){
-		
-	}
+	private String username;//用户名
+	private String userpass;//密码
+	private String usertel;//电话
+	private String userCom;//公司
+	private String userAddress;//地址
+	private String userQQ;//QQ
+	private String userAddtime;//注册时间
+	private int userMoney;//财富余额
+	private int userState;//状态
+	private String userIP;//最后登录IP
+	private String userEmail;//邮箱
+	private String idCard;//身份证
+	private String sex;//性别
+	private int age;//年龄
+	private String touxiang;//头像
+	private Area area;//县区
+	private City city;//地市
+	private Province Province;//省份
+	private String realName;//真实姓名
+	private String info;//简介
 	
-	public User(String username, String avatarUrl,
-			int created, String name, String nickName, int onlineStatus,
-			int roleStatus, String token, int updated) {
+	public User(){}
+
+	public User(int id, String username, String userpass, String usertel,
+			String userCom, String userAddress, String userQQ,
+			String userAddtime, int userMoney, int userState, String userIP,
+			String userEmail, String idCard, String sex, int age,
+			String touxiang, Area area, City city,
+			com.qianyouba.entity.Province province, String realName, String info) {
 		super();
+		this.id = id;
 		this.username = username;
-		this.avatarUrl = avatarUrl;
-		this.created = created;
-		this.name = name;
-		this.nickName = nickName;
-		this.onlineStatus = onlineStatus;
-		this.roleStatus = roleStatus;
-		this.token = token;
-		this.updated = updated;
+		this.userpass = userpass;
+		this.usertel = usertel;
+		this.userCom = userCom;
+		this.userAddress = userAddress;
+		this.userQQ = userQQ;
+		this.userAddtime = userAddtime;
+		this.userMoney = userMoney;
+		this.userState = userState;
+		this.userIP = userIP;
+		this.userEmail = userEmail;
+		this.idCard = idCard;
+		this.sex = sex;
+		this.age = age;
+		this.touxiang = touxiang;
+		this.area = area;
+		this.city = city;
+		Province = province;
+		this.realName = realName;
+		this.info = info;
 	}
 
 	public int getId() {
@@ -47,69 +72,157 @@ public class User {
 		this.username = username;
 	}
 
-	public String getAvatarUrl() {
-		return avatarUrl;
+	public String getUserpass() {
+		return userpass;
 	}
 
-	public void setAvatarUrl(String avatarUrl) {
-		this.avatarUrl = avatarUrl;
+	public void setUserpass(String userpass) {
+		this.userpass = userpass;
 	}
 
-	public int getCreated() {
-		return created;
+	public String getUsertel() {
+		return usertel;
 	}
 
-	public void setCreated(int created) {
-		this.created = created;
+	public void setUsertel(String usertel) {
+		this.usertel = usertel;
 	}
 
-	public String getName() {
-		return name;
+	public String getUserCom() {
+		return userCom;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUserCom(String userCom) {
+		this.userCom = userCom;
 	}
 
-	public String getNickName() {
-		return nickName;
+	public String getUserAddress() {
+		return userAddress;
 	}
 
-	public void setNickName(String nickName) {
-		this.nickName = nickName;
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
 	}
 
-	public int getOnlineStatus() {
-		return onlineStatus;
+	public String getUserQQ() {
+		return userQQ;
 	}
 
-	public void setOnlineStatus(int onlineStatus) {
-		this.onlineStatus = onlineStatus;
+	public void setUserQQ(String userQQ) {
+		this.userQQ = userQQ;
 	}
 
-	public int getRoleStatus() {
-		return roleStatus;
+	public String getUserAddtime() {
+		return userAddtime;
 	}
 
-	public void setRoleStatus(int roleStatus) {
-		this.roleStatus = roleStatus;
+	public void setUserAddtime(String userAddtime) {
+		this.userAddtime = userAddtime;
 	}
 
-	public String getToken() {
-		return token;
+	public int getUserMoney() {
+		return userMoney;
 	}
 
-	public void setToken(String token) {
-		this.token = token;
+	public void setUserMoney(int userMoney) {
+		this.userMoney = userMoney;
 	}
 
-	public int getUpdated() {
-		return updated;
+	public int getUserState() {
+		return userState;
 	}
 
-	public void setUpdated(int updated) {
-		this.updated = updated;
+	public void setUserState(int userState) {
+		this.userState = userState;
+	}
+
+	public String getUserIP() {
+		return userIP;
+	}
+
+	public void setUserIP(String userIP) {
+		this.userIP = userIP;
+	}
+
+	public String getUserEmail() {
+		return userEmail;
+	}
+
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+
+	public String getIdCard() {
+		return idCard;
+	}
+
+	public void setIdCard(String idCard) {
+		this.idCard = idCard;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getTouxiang() {
+		return touxiang;
+	}
+
+	public void setTouxiang(String touxiang) {
+		this.touxiang = touxiang;
+	}
+
+	public Area getArea() {
+		return area;
+	}
+
+	public void setArea(Area area) {
+		this.area = area;
+	}
+
+	public City getCity() {
+		return city;
+	}
+
+	public void setCity(City city) {
+		this.city = city;
+	}
+
+	public Province getProvince() {
+		return Province;
+	}
+
+	public void setProvince(Province province) {
+		Province = province;
+	}
+
+	public String getRealName() {
+		return realName;
+	}
+
+	public void setRealName(String realName) {
+		this.realName = realName;
+	}
+
+	public String getInfo() {
+		return info;
+	}
+
+	public void setInfo(String info) {
+		this.info = info;
 	}
 	
-
+	
 }

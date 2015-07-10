@@ -14,7 +14,7 @@ public class UserDaoImpl implements UserDao {
 	
 	public User login(String username, String password) {
 
-		String sql = " select id,username,password from UserTbl where username=? and password=? ";
+		String sql = " select * from UserTbl where UserTel=? and UserPass=? ";
 		DBUtil util = new DBUtil();
 		Connection conn = util.openConnection();
 		try {
